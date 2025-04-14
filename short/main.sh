@@ -4,4 +4,5 @@ root=$(pwd)
 export PATH=$root/sdk/bin:$PATH
 export MODEL=gpt-4o-mini
 export BIBLE=$root/bible
+export TEMP=0
 exec httpexec app.sh lang
