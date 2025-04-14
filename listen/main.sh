@@ -7,4 +7,5 @@ export REASON=o3-mini
 export MODEL=gpt-4o
 export TTS=tts-1-hd
 export VOICE=onyx
+export TEMP=0
 exec httpexec app.sh key
