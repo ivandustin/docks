@@ -3,9 +3,7 @@ set -euvxo pipefail
 export PATH=$PWD/pod/bin:$PWD/sdk/bin:$PATH
 export AWS_DEFAULT_REGION=auto
 export BIBLE=$PWD/bible
-export REASON=o3-mini
-export MODEL=gpt-4o
+export MODEL=o3-mini
 export TTS=tts-1-hd
 export VOICE=onyx
-export TEMPER=0
 exec httpexec app.sh key
