@@ -4,6 +4,5 @@ root=$(pwd)
 export PATH=$root/sdk/bin:$PATH
 export BIBLE=$root/bible
 export PW=$root/pw.json
-export MODEL=gpt-4o
-export TEMPER=0
+export MODEL=o3-mini
 exec httpexec app.sh lang prof pub
