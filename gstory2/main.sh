@@ -4,5 +4,5 @@ root=$(pwd)
 export PATH=$root/sdk/bin:$PATH
 export BIBLE=$root/bible
 export PW=$root/pw.json
-export MODEL=o3-mini
+export MODEL=o4-mini
 exec httpexec app.sh lang prof pub
