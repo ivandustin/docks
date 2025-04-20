@@ -2,4 +2,4 @@
 set -euvxo pipefail
 lang=$1
 pg
-reason gp < topic.txt | log | trans $lang | log
+reason gp < topic.txt | log | native $lang | log

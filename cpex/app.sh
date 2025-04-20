@@ -7,13 +7,13 @@ pg
 cpg
 exg < edit.txt | log > exg.txt
 (
-	trans $lang < edit.txt | log
+	native $lang < edit.txt | log
 	echo
 	ref
 	echo
 	echo —
 	echo
-	trans $lang < exg.txt | log
+	native $lang < exg.txt | log
 ) > post.txt
-sen < edit.txt | log | trans $lang | log | txt2img title.png
+sen < edit.txt | log | native $lang | log | txt2img title.png
 fb --media title.png < post.txt

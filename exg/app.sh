@@ -3,6 +3,6 @@ set -euvxo pipefail
 lang=$1
 export FBPROF=$2
 export FBPUB=$3
-exgx | log | trans $lang | log > content.txt
-sen < content.txt | log | trans $lang | log | txt2img title.png
+exgx | log | native $lang | log > content.txt
+sen < content.txt | log | native $lang | log | txt2img title.png
 fb --media title.png < content.txt

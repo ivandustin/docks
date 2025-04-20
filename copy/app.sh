@@ -3,4 +3,4 @@ set -euvxo pipefail
 lang=$1
 pg
 cpg
-trans $lang < edit.txt | log
+native $lang < edit.txt | log
