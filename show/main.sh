@@ -6,4 +6,4 @@ export BIBLE=$root/bible
 export PW=$root/pw.json
 export MODEL=o4-mini
 export EFFORT=high
-waithttp lang prof pub | xargsn ./app.sh
+waithttp 60 lang prof pub | xargsn ./app.sh
