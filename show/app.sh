@@ -5,7 +5,10 @@ export FBPROF=$2
 export FBPUB=$3
 pg
 cpg
-reason show < edit.txt | log > show.txt
+exegesis < edit.txt | log > exgraw.txt
+prose < exgraw.txt | log > exg.txt
+catb edit.txt exg.txt > cat.txt
+show < cat.txt | log > show.txt
 native $lang < show.txt | log > native.txt
 fmts < native.txt | log > content.txt
 image < show.txt | log > image.txt
