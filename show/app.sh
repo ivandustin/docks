@@ -5,7 +5,7 @@ export FBPROF=$2
 export FBPUB=$3
 pg
 cpg
-exegesis < edit.txt | log > exgraw.txt
+deepseek exegesis < edit.txt | log > exgraw.txt
 prose < exgraw.txt | log > exg.txt
 catb edit.txt exg.txt > cat.txt
 show < cat.txt | log > show.txt
