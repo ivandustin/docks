@@ -6,7 +6,8 @@ export FBPUB=$3
 pg
 cpg
 deepseek exegesis < edit.txt | log > exgraw.txt
-prose < exgraw.txt | log > exg.txt
+prose < exgraw.txt | log > exgprose.txt
+expandrefs < exgprose.txt | log > exg.txt
 catb edit.txt exg.txt > cat.txt
 story < cat.txt | log > story.txt
 (
