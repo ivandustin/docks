@@ -8,9 +8,9 @@ cpg
 deepseek exegesis < edit.txt | log > exgraw.txt
 prose < exgraw.txt | log > exg.txt
 catb edit.txt exg.txt > cat.txt
-show < cat.txt | log > show.txt
+story < cat.txt | log > story.txt
 (
-	native $lang < show.txt | fmts
+	native $lang < story.txt | fmts
 	echo
 	echo —
 	echo
