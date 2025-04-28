@@ -5,4 +5,5 @@ export PATH=$root/sdk/bin:$PATH
 export BIBLE=$root/bible
 export PW=$root/pw.json
 export MODEL=o4-mini
-exec httpexec app.sh lang prof pub
+export EFFORT=high
+waithttp 60 lang prof pub | xargsn ./app.sh
