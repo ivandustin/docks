@@ -13,6 +13,8 @@ story < cat.txt | log > story.txt
 (
 	native $lang < story.txt | fmts
 	echo
+	ref
+	echo
 	echo —
 	echo
 	native $lang < exg.txt | fmts
