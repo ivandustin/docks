@@ -19,6 +19,7 @@ story < cat.txt | log > story.txt
 	echo
 	native $lang < exg.txt | fmts
 ) | log > content.txt
-image < cat.txt | log > image.txt
-curl -s -o image.png "$(cat image.txt)"
+#image < cat.txt | log > image.txt
+#curl -s -o image.png "$(cat image.txt)"
+sen < cat.txt | log | native $lang | log | txt2img image.png
 fb --media image.png < content.txt
